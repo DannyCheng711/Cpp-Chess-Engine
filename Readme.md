@@ -10,12 +10,12 @@ A compact chess engine project implemented in C++ for practicing move generation
 
 --- 
 ### Key components
-- Board & game logic: [`ChessGame.h`](ChessGame.h). See implementation in '[`ChessGame.cpp`](ChessGame.cpp).
+- **Board & game logic:** [`ChessGame.h`](ChessGame.h). See implementation in [`ChessGame.cpp`](ChessGame.cpp).
   - FEN loader: [`ChessGame::loadState`](ChessGame.cpp)
   - Move submit / validation: [`ChessGame::submitMove`](ChessGame.cpp)
   - King safety and game state checks: [`ChessGame::isKingSafe`](ChessGame.cpp), [`ChessGame::isCheckMate`](ChessGame.cpp), [`ChessGame::isStaleMate`](ChessGame.cpp)
   - Helpers: [`ChessGame::performTemporaryMove`](ChessGame.cpp), [`ChessGame::undoTemporaryMove`](ChessGame.cpp)
-- Piece hierarchy: [`ChessPiece.h`](ChessPiece.h). See implementations in [`ChessPiece.cpp`](ChessPiece.cpp)
+- **Piece hierarchy:** [`ChessPiece.h`](ChessPiece.h). See implementations in [`ChessPiece.cpp`](ChessPiece.cpp)
   - Move generation interface: [`ChessPiece::getLegalMoves`](ChessPiece.h)
   - Helpers: [`ChessPiece::isWhiteSide`](ChessPiece.cpp), [`ChessPiece::setPosition`](ChessPiece.cpp)
 
